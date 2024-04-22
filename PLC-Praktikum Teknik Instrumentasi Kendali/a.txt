@@ -1,0 +1,23 @@
+A. PLC pada Sistem Konveyor.
+B. PLC pada Sistem Pneumatik.
+C. PLC pada Sistem Lampu.
+
+praktikum ini akan mencoba untuk membuat rangkaian dari kendali PLC pada sistem, baik rangkaian perangkat keras dan diagram ladder.
+
+perangkat plc Omron CP1E
+
+konveyor
+1. sistem dinyalakan, konveyor bergerak.
+2. sensor mendeteksi barang pada konveyor, konveyor berhenti.
+3. saat berhenti, sistem memberikan sinyal ke timer untuk menghitungmundur.
+4. saat hitung mundur habis, sensor dimatikan sesaat, konveyor bergerak lagi, sensor menyala kembali.
+
+lampu
+1. input berupa switch NO sebagai tombol ON pada address 000 dan switch NO sebagai OFF pada address 003.
+2. Output berupa lampu yang direpresentasikan pada simbol berkode address 100.
+3. Saat tombol switch ON ditekan dengan memberi nilai 1, maka 
+sinyal listrik akan menyalakan lampu.
+4. Saat tombol switch OFF ditekan dengan memberi nilai 1, maka rangkaian akan mengirimkan sinyal ke lampu melalui 200 yang akan membuka switch NC sehingga lampu akan mati.
+
+pneumatik
+1. Input berupa tiga switch NO dengan kode 000 untuk kendali kondisi "DORONG" pada batang pneumatik, kode 002
